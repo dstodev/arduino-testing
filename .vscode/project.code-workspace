@@ -20,11 +20,11 @@
 		     Extension Settings
 		~~~~~~~~~~~~~~~~~~~~~~~~~ */
 		"arduino.logLevel": "info",
-		"cmake.configureOnOpen": true,
-		"cmake.buildDirectory": "${workspaceRoot}/build",
-		"cmake.sourceDirectory": "${workspaceRoot}",
+		"cmake.configureOnOpen": false,
+		"cmake.buildDirectory": "${workspaceFolder}/build/cmake",
+		"cmake.sourceDirectory": "${workspaceFolder}",
 		"cmake.debugConfig": {
-			"cwd": "${workspaceRoot}/build"
+			"cwd": "${workspaceFolder}/build/cmake"
 		},
 		"cmake.configureSettings": {
 			"BUILD_GMOCK": "OFF"

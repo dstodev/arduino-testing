@@ -1,12 +1,20 @@
-add_library(support INTERFACE)
-target_include_directories(support INTERFACE
+add_library(support OBJECT)
+target_include_directories(support PUBLIC
 	${CMAKE_CURRENT_LIST_DIR}/include
 )
-target_sources(support INTERFACE
+target_sources(support PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}/src/adder
 )
 
-add_library(support_host)
-target_link_libraries(support_host PUBLIC support)
+if (BUILD_ARDUINO)
+	target_link_libraries(project
+		PRIVATE
+			support
+	)
+endif()
 
-add_subdirectory(tests)
+if (BUILD_TESTS)
+	message(INFO "Building tests for library: support")
+
+	add_subdirectory(tests)
+endif()

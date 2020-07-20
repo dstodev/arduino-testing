@@ -1,6 +1,6 @@
 #include <arduino.h>
 
-#include "src/print.h"
+#include <adder.h>
 
 const int PIN_LED = 11;
 const int PIN_BUTTON = 2;
@@ -26,7 +26,8 @@ void setup()
 
 void loop()
 {
-	myPrint();
+	Adder adder;
+	int result = adder.add(1, 2);
 
 	delay(1000);
 }

@@ -1,0 +1,10 @@
+[
+	{
+		"name": "Arduino Mega2560",
+		"toolchainFile": "${workspaceFolder}/lib/arduino-cmake/Arduino-toolchain.cmake",
+		"cmakeSettings": {
+			"BUILD_MODE": "Arduino",
+			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/BoardOptions.cmake"
+		}
+	}
+]
