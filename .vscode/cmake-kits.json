@@ -3,7 +3,7 @@
 		"name": "Arduino Mega2560",
 		"toolchainFile": "${workspaceFolder}/lib/arduino-cmake/Arduino-toolchain.cmake",
 		"cmakeSettings": {
-			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/BoardOptions.cmake"
+			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/mega2560.cmake"
 		}
 	},
 	{
