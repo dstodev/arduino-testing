@@ -3,8 +3,16 @@
 		"name": "Arduino Mega2560",
 		"toolchainFile": "${workspaceFolder}/lib/arduino-cmake/Arduino-toolchain.cmake",
 		"cmakeSettings": {
-			"BUILD_MODE": "Arduino",
 			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/BoardOptions.cmake"
+		}
+	},
+	{
+		"name": "Host (Testing Build)",
+		"visualStudio": "6dfebc48",
+		"visualStudioArchitecture": "amd64",
+		"compilers": {
+			"C": "C:\\Program Files\\LLVM\\bin\\clang-cl.exe",
+			"CXX": "C:\\Program Files\\LLVM\\bin\\clang-cl.exe"
 		}
 	}
 ]

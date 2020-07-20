@@ -7,7 +7,7 @@ target_sources(support PRIVATE
 )
 
 if (BUILD_ARDUINO)
-	target_link_libraries(project
+	target_link_libraries(${PROJECT_MAIN}
 		PRIVATE
 			support
 	)
