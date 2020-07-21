@@ -26,9 +26,9 @@
 		"cmake.debugConfig": {
 			"cwd": "${workspaceFolder}/build/cmake"
 		},
-		"cmake.configureSettings": {
-			"BUILD_GMOCK": "OFF"
-		},
+		// "cmake.configureSettings": {
+		// 	"BUILD_GMOCK": "OFF"
+		// },
 
 		/* ~~~~~~~~~~~~~~~~~~~~~
 		     Other Settings

@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Upload to Board",
+			"command": "cmake --build . --target upload",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceFolder}/build/cmake",
+				"env": {
+					"SERIAL_PORT": "COM3"
+				}
+			},
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always"
+			},
+		},
+		// {
+		// 	"label": "Build (CMake)",
+		// 	"group": "build",
+		// 	"command": "${command:cmake.build}",
+		// 	"problemMatcher": []
+		// }
+	]
+}
