@@ -2,9 +2,11 @@
 
 #include <adder.h>
 
-const int PIN_LED = 11;
+// Inputs
 const int PIN_BUTTON = 2;
 
+// Outputs
+const int PIN_LED = 11;
 const int PIN_LED_BOARD = 13;
 
 void toggleButton()
@@ -22,10 +24,12 @@ void setup()
 {
 	Serial.begin(115200);
 
+	// Inputs
+	pinMode(PIN_BUTTON, INPUT_PULLUP);
+
+	// Outputs
 	pinMode(PIN_LED, OUTPUT);
 	pinMode(PIN_LED_BOARD, OUTPUT);
-
-	pinMode(PIN_BUTTON, INPUT_PULLUP);
 
 	attachInterrupt(digitalPinToInterrupt(PIN_BUTTON), toggleButton, CHANGE);
 }
