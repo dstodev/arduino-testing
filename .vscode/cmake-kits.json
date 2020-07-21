@@ -1,18 +1,18 @@
 [
 	{
 		"name": "Arduino Mega2560",
-		"toolchainFile": "${workspaceFolder}/lib/arduino-cmake/Arduino-toolchain.cmake",
+		"toolchainFile": "${workspaceFolder}/lib/third-party/arduino-cmake/Arduino-toolchain.cmake",
 		"cmakeSettings": {
-			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/mega2560.cmake"
+			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/lib/third-party/mega2560.cmake"
 		}
 	},
 	{
-		"name": "Host (Testing Build)",
+		"name": "Host x64 (Testing Build)",
 		"visualStudio": "6dfebc48",
 		"visualStudioArchitecture": "amd64",
 		"compilers": {
-			"C": "C:\\Program Files\\LLVM\\bin\\clang-cl.exe",
-			"CXX": "C:\\Program Files\\LLVM\\bin\\clang-cl.exe"
+			"C": "${env:ProgramFiles}\\LLVM\\bin\\clang-cl.exe",
+			"CXX": "${env:ProgramFiles}\\LLVM\\bin\\clang-cl.exe"
 		}
 	}
 ]

@@ -1,20 +1,22 @@
-add_library(support OBJECT)
-target_include_directories(support PUBLIC
+set(LIB_NAME playground)
+
+add_library(${LIB_NAME} OBJECT)
+target_include_directories(${LIB_NAME} PUBLIC
 	${CMAKE_CURRENT_LIST_DIR}/include
 )
-target_sources(support PRIVATE
+target_sources(${LIB_NAME} PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}/src/adder
 )
 
 if (BUILD_ARDUINO)
 	target_link_libraries(${PROJECT_MAIN}
 		PRIVATE
-			support
+			${LIB_NAME}
 	)
 endif()
 
 if (BUILD_TESTS)
-	message(INFO "Building tests for library: support")
+	message("Building tests for library: ${LIB_NAME}")
 
 	add_subdirectory(tests)
 endif()

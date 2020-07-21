@@ -1,7 +1,3 @@
-# Third-party libraries
-if (BUILD_TESTS)
-	add_subdirectory(googletest EXCLUDE_FROM_ALL)
-endif()
+add_subdirectory(third-party)
 
-# My libraries
-add_subdirectory(support)
+add_subdirectory(playground)

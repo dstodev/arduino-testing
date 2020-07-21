@@ -4,5 +4,5 @@ util_add_test(adder
 	FILES
 		test_adder
 	LIBRARIES
-		support
+		playground
 )

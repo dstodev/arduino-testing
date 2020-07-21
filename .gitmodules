@@ -1,6 +1,6 @@
 [submodule "lib/googletest"]
-	path = lib/googletest
+	path = lib/third-party/googletest
 	url = https://github.com/google/googletest.git
 [submodule "lib/arduino-cmake"]
-	path = lib/arduino-cmake
+	path = lib/third-party/arduino-cmake
 	url = https://github.com/a9183756-gh/Arduino-CMake-Toolchain.git
