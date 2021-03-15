@@ -2,18 +2,15 @@
 
 #include <adder.h>
 
-// Inputs
-const int PIN_BUTTON = 2;
+#include "pins.h"
 
-// Outputs
-const int PIN_LED = 11;
-const int PIN_LED_BOARD = 13;
 
 void toggleButton()
 {
 	if (digitalRead(PIN_BUTTON) == LOW) {
 		digitalWrite(PIN_LED, HIGH);
 		digitalWrite(PIN_LED_BOARD, HIGH);
+
 	} else {
 		digitalWrite(PIN_LED, LOW);
 		digitalWrite(PIN_LED_BOARD, LOW);

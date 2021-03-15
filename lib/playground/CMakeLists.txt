@@ -1,11 +1,15 @@
 set(LIB_NAME playground)
 
-add_library(${LIB_NAME} OBJECT)
-target_include_directories(${LIB_NAME} PUBLIC
-	${CMAKE_CURRENT_LIST_DIR}/include
+
+add_library(${LIB_NAME})
+
+target_include_directories(${LIB_NAME}
+	PUBLIC
+		${CMAKE_CURRENT_LIST_DIR}/include
 )
-target_sources(${LIB_NAME} PRIVATE
-	${CMAKE_CURRENT_LIST_DIR}/src/adder
+target_sources(${LIB_NAME}
+	PRIVATE
+		${CMAKE_CURRENT_LIST_DIR}/src/adder
 )
 
 if (BUILD_ARDUINO)

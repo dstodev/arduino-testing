@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Arduino Mega2560",
+		"name": "Guest Arduino Mega2560",
 		"toolchainFile": "${workspaceFolder}/lib/third-party/arduino-cmake/Arduino-toolchain.cmake",
 		"cmakeSettings": {
 			"ARDUINO_BOARD_OPTIONS_FILE": "${workspaceFolder}/lib/third-party/mega2560.cmake"

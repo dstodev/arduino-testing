@@ -5,7 +5,7 @@ include(GoogleTest)
 function(util_add_test name)
 	set(options "")
 	set(oneValueArgs "")
-	set(multiValueArgs FILES INCLUDES LIBRARIES)
+	set(multiValueArgs "FILES;INCLUDES;LIBRARIES")
 	cmake_parse_arguments(${name} "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
 	if(NOT ${name}_FILES)
